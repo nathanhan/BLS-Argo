@@ -7,4 +7,8 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+
+    # make it so that it responds to blank url extension
+    url(r'^$', include('jason.urls')),
+    # url(r'^jason/', include('jason.urls')), 
 )
